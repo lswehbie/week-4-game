@@ -15,3 +15,5 @@ var crystalFour = Math.floor((Math.random() * (12 - 1 + 1) + 1));
 // counter adds up numbers to equal random number generated 
 
 // win count / lose count
+
+// game restarts whenever the player wins or loses.
