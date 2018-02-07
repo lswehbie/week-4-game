@@ -1,29 +1,48 @@
 //putting reset function outside of document.ready to act as a global function.
 
+// define variables without value globally so you don't have to put var on in the reset function.
+
+var givenRandomNumber;
+var crystalOne;
+var crystalTwo;
+var crystalThree;
+var crystalFour;
+var counter;
+
 function reset() {
 	// random number generated
+	// given random number must be between 19 - 120
 
-	var givenRandomNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
+	givenRandomNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
 
 	// four crystals that represent a hidden number
+	// crystal random hidden value must be between 1 - 12
 
-	var crystalOne = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+	crystalOne = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 
-	var crystalTwo = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+	crystalTwo = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 
-	var crystalThree = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+	crystalThree = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 
-	var crystalFour = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+	crystalFour = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 
 	// counter adds up numbers to equal random number generated
-	var counter = 0;
+	counter = 0;
 }
 
 $(document).ready(function() {
+	// I put reset here- once the document is ready we want the functions assigned and ready to use.
+
+	reset();
+
+	//the variables below are not in the global variable becasue they are not defined more than once.
+
 	var crystalImageOne = $("#crystalOne");
 	var crystalImageTwo = $("#crystalTwo");
 	var crystalImageThree = $("#crystalThree");
 	var crystalImageFour = $("#crystalFour");
+
+	// win and lose count start at 0 when the page is loaded and when it's refreshed.
 
 	var winCount = 0;
 	var loseCount = 0;
@@ -32,6 +51,12 @@ $(document).ready(function() {
 	// and if we click crystal image two it will increase the counter by crystal two,
 	// and if we click crystal image three it will increase the counter by crystal three,
 	// and if we click crystal image four it will increase the counter by crystal four.
+
+	//this is where we call the images from the html and interact with them.
+
+	//.click triggers the function
+
+	//counter is equal to counter plus crystal number
 
 	$(crystalImageOne).click(function() {
 		counter += crystalOne;
@@ -65,8 +90,10 @@ $(document).ready(function() {
 	function counterCheck(currentTotal, total) {
 		if (currentTotal === total) {
 			winCount += 1;
+			reset();
 		} else if (currentTotal > total) {
 			loseCount += 1;
+			reset();
 		}
 
 		// win count / lose count
