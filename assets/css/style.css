@@ -1,0 +1,47 @@
+body {
+
+
+};
+
+
+
+
+.header {
+	position: flex;
+	justify-content: center;
+	text-align: center;
+
+};
+
+
+h1 {
+
+	position: flex;
+	justify-content: center;
+}
+
+
+#crystalOne {
+
+	max-height: 200px;
+	max-width: 200px;
+	
+}
+
+#crystalTwo { 
+
+	max-height: 200px;
+	max-width: 200px;
+	
+}
+
+#crystalThree {
+	max-height: 200px;
+	max-width: 200px;
+}
+
+#crystalFour {
+	max-height: 200px;
+	max-width: 200px;
+
+}
