@@ -21,27 +21,8 @@ h1 {
 }
 
 
-#crystalOne {
+.crystalImages {
 
-	max-height: 200px;
-	max-width: 200px;
-	
-}
-
-#crystalTwo { 
-
-	max-height: 200px;
-	max-width: 200px;
-	
-}
-
-#crystalThree {
-	max-height: 200px;
-	max-width: 200px;
-}
-
-#crystalFour {
-	max-height: 200px;
-	max-width: 200px;
-
+	max-height: 100px;
+	max-width: 100px;
 }
