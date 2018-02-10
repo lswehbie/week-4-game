@@ -43,6 +43,7 @@ p {
     border: 1px solid black;
     opacity: 0.6;
     filter: alpha(opacity=60);
+    
 }
 
 
@@ -50,9 +51,13 @@ p {
 
 	max-height: 100px;
 	max-width: 100px;
-	text-align: center;
-	margin: 0;
 }
+
+
+#crystalOne {
+	margin-left: 33%
+}
+
 
 
 
@@ -70,6 +75,7 @@ p {
     filter: alpha(opacity=60);
     font-family: "Dark Crystal", serif;
 	font-weight: bold;
+	float: left;
 	
 }
 
@@ -81,15 +87,18 @@ p {
     filter: alpha(opacity=60);
     font-family: "Dark Crystal", serif;
 	font-weight: bold;
+	float: right;
 
 }
 
 
 #win{
-	float: right;
+	float: left;
 	text-align: center;
 	font-family: "Dark Crystal", serif;
 	font-weight: bold;
+	font-size: 25pt;
+	
 
 }
 
@@ -97,4 +106,7 @@ p {
 	text-align: center;
 	font-family: "Dark Crystal", serif;
 	font-weight: bold;
+	float: right;
+	font-size: 25pt;
+
 }
