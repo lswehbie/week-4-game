@@ -2,6 +2,7 @@ body {
 	margin: 0;
  	padding: 0;
  	background-image: url('../images/background.jpg');
+ 	background-repeat: no-repeat;
 
 
 }
@@ -54,12 +55,15 @@ p {
 
 	max-height: 100px;
 	max-width: 100px;
+	margin: auto;
 
 }
 
 #crystalOne {
-	margin-left: 33%
-	text-align: center;
+	margin-left: 5%;
+	display: flex-end;
+	justify-content: space-between;
+
 
 
 }
@@ -106,6 +110,7 @@ h4 {
 	padding-bottom: 130px;
 
 
+
 }
 
 
@@ -122,6 +127,7 @@ h4 {
 h3 {
 	color: indigo;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	margin: auto;
 }
 
 
