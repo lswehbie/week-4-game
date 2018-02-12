@@ -35,13 +35,12 @@ p {
 
 	text-align: center;
 	font-size: 18pt;
-	
 }
 
 .instructions {
 	text-align: center;
-	font-family: "Dark Crystal", serif;
-	font-size: 18pt;
+	font-family: "Graphik", serif;
+	font-size: 12pt;
 	margin: 30px;
     background-color: #ffffff;
     border: 1px solid black;
@@ -76,12 +75,22 @@ p {
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.6;
-    filter: alpha(opacity=60);
     font-family: "Dark Crystal", serif;
-	font-weight: bold;
+    filter: alpha(opacity=60);
 	float: left;
 	padding-right: 150px;
+	padding-bottom: 130px;
+
+
 	
+}
+
+
+h4 {
+	
+ 	color: indigo;
+ 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 
 .score {
@@ -94,6 +103,7 @@ p {
 	font-weight: bold;
 	float: right;
 	padding-left: 143px;
+	padding-bottom: 130px;
 
 
 }
@@ -105,9 +115,17 @@ p {
 	font-family: "Dark Crystal", serif;
 	font-weight: bold;
 	font-size: 25pt;
-	
-
 }
+
+
+
+h3 {
+	color: indigo;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
 
 #loss {
 	text-align: center;
@@ -115,5 +133,14 @@ p {
 	font-weight: bold;
 	float: right;
 	font-size: 25pt;
+
+}
+
+
+h4 {
+
+	color: indigo;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 
 }
