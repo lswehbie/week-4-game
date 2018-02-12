@@ -13,7 +13,11 @@ function reset() {
 	// random number generated
 	// given random number must be between 19 - 120
 
+	//under the variable written in the reset function - the random number needs to reset after
+	//-- after a win or loss
+
 	givenRandomNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
+	$("#givenRandomNumber").text(givenRandomNumber);
 
 	// four crystals that represent a hidden number
 	// crystal random hidden value must be between 1 - 12
@@ -29,6 +33,7 @@ function reset() {
 	// counter adds up numbers to equal random number generated
 	// but must reset after each win or loss
 	counter = 0;
+	$("#userCount").text(counter);
 }
 
 $(document).ready(function() {
