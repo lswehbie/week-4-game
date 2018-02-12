@@ -71,24 +71,32 @@ $(document).ready(function() {
 	$(crystalImageOne).click(function() {
 		counter += crystalOne;
 		$("#userCount").text(counter);
+		$("#win-count").text(winCount);
+		$("#lose-count").text(loseCount);
 		counterCheck(counter, givenRandomNumber);
 	});
 
 	$(crystalImageTwo).click(function() {
 		counter += crystalTwo;
 		$("#userCount").text(counter);
+		$("#win-count").text(winCount);
+		$("#lose-count").text(loseCount);
 		counterCheck(counter, givenRandomNumber);
 	});
 
 	$(crystalImageThree).click(function() {
 		counter += crystalThree;
 		$("#userCount").text(counter);
+		$("#win-count").text(winCount);
+		$("#lose-count").text(loseCount);
 		counterCheck(counter, givenRandomNumber);
 	});
 
 	$(crystalImageFour).click(function() {
 		counter += crystalFour;
 		$("#userCount").text(counter);
+		$("#win-count").text(winCount);
+		$("#lose-count").text(loseCount);
 		counterCheck(counter, givenRandomNumber);
 	});
 
@@ -104,11 +112,11 @@ $(document).ready(function() {
 	function counterCheck(currentTotal, total) {
 		if (currentTotal === total) {
 			winCount += 1;
-			alert.prompt("YOU WIN!!");
+			alert("YOU WIN!!");
 			reset();
 		} else if (currentTotal > total) {
 			loseCount += 1;
-			alert.prompt("YOU LOSE! TRY AGAIN!!");
+			alert("YOU LOSE! TRY AGAIN!!");
 			reset();
 		}
 
