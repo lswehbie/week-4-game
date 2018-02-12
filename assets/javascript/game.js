@@ -50,9 +50,16 @@ $(document).ready(function() {
 
 	// The code below allows for the  win/ loss count, given random numbers to appear on the game
 
-	//$(#win).text(winCount);
-	//$(#loss).text(lossCount);
-	//$(.randomNumber).text(givenRandomNumber);
+
+
+	$("#win").text(winCount);
+	$("#loss").text(lossCount);
+	$("#givenRandomNumber").text(givenRandomNumber);
+
+
+
+
+
 
 	// If we click crystal image one the counter will increase by crystal one (random number),
 	// and if we click crystal image two it will increase the counter by crystal two,
