@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 	$("#win").text(winCount);
 	$("#loss").text(lossCount);
-	$("#givenRandomNumber").text(givenRandomNumber);
+	$("#randomNumber").text(givenRandomNumber);
 
 
 
