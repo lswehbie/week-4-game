@@ -54,6 +54,7 @@ $(document).ready(function() {
 	$("#win-count").text(winCount);
 	$("#lose-count").text(loseCount);
 	$("#givenRandomNumber").text(givenRandomNumber);
+	$("#userCount").text(counter);
 
 
 	// If we click crystal image one the counter will increase by crystal one (random number),

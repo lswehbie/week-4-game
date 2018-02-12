@@ -82,9 +82,6 @@ p {
     font-family: "Dark Crystal", serif;
     filter: alpha(opacity=60);
 	float: left;
-	padding-right: 150px;
-	padding-bottom: 130px;
-
 
 	
 }
@@ -97,6 +94,7 @@ h4 {
 
 }
 
+
 .score {
 	margin: 30px;
     background-color: #ffffff;
@@ -106,14 +104,6 @@ h4 {
     font-family: "Dark Crystal", serif;
 	font-weight: bold;
 	float: right;
-	padding-left: 143px;
-	padding-bottom: 130px;
-
-
-
-
-
-
 }
 
 
