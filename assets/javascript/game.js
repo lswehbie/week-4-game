@@ -27,6 +27,7 @@ function reset() {
 	crystalFour = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 
 	// counter adds up numbers to equal random number generated
+	// but must reset after each win or loss
 	counter = 0;
 }
 
@@ -113,10 +114,12 @@ $(document).ready(function() {
 		if (currentTotal === total) {
 			winCount += 1;
 			alert("YOU WIN!!");
+			$("#win-count").text(winCount);
 			reset();
 		} else if (currentTotal > total) {
 			loseCount += 1;
 			alert("YOU LOSE! TRY AGAIN!!");
+			$("#lose-count").text(loseCount);
 			reset();
 		}
 
