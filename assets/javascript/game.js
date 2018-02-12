@@ -70,21 +70,25 @@ $(document).ready(function() {
 
 	$(crystalImageOne).click(function() {
 		counter += crystalOne;
+		$("#userCount").text(counter);
 		counterCheck(counter, givenRandomNumber);
 	});
 
 	$(crystalImageTwo).click(function() {
 		counter += crystalTwo;
+		$("#userCount").text(counter);
 		counterCheck(counter, givenRandomNumber);
 	});
 
 	$(crystalImageThree).click(function() {
 		counter += crystalThree;
+		$("#userCount").text(counter);
 		counterCheck(counter, givenRandomNumber);
 	});
 
 	$(crystalImageFour).click(function() {
 		counter += crystalFour;
+		$("#userCount").text(counter);
 		counterCheck(counter, givenRandomNumber);
 	});
 
