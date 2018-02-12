@@ -104,11 +104,11 @@ $(document).ready(function() {
 	function counterCheck(currentTotal, total) {
 		if (currentTotal === total) {
 			winCount += 1;
-			alert.prompt("YOU WIN!!")
+			alert.prompt("YOU WIN!!");
 			reset();
 		} else if (currentTotal > total) {
 			loseCount += 1;
-			alert.prompt("YOU LOSE! TRY AGAIN!!")
+			alert.prompt("YOU LOSE! TRY AGAIN!!");
 			reset();
 		}
 
